@@ -1,0 +1,128 @@
+.container{
+  border:5px solid black;
+  margin: auto;
+  max-width: 375;
+  
+} 
+.inputarea{
+  align-self: center;
+  margin:auto;
+  width:200px;
+  height: 60;
+  border:2px solid red;
+  
+}
+
+#letter{
+  width:40px;
+  height: 50px;
+  font-size:40px;
+  text-align: center;
+}
+
+#inputbutton{
+  width:150px;
+  height: 50px;
+  font-size:40px;
+  text-align: center;
+}
+
+.wordspaces{
+  align-self: center;
+  margin:20px;
+  border:2px solid green;
+ }
+.letterbox{
+  width:40px;
+  height: 50px;
+  font-size:40px;
+  text-align: center;
+}
+
+.figure{
+  align-self: center;
+  margin: auto;
+  border:5px solid blue;
+  height:330px;
+  width: 300px
+
+}
+
+#head {
+  justify-items: center;
+  height: 50px;
+  width: 50px;
+  background-color:white;
+  border-radius: 50%;   
+  display: inline-block;
+  position: relative;
+  top: 0%;
+  left:50%;
+  transform: translate(-50%);
+}
+
+#body {
+  justify-items: center;
+  border: 15px solid white;
+  width:15px;
+  height: 100px;
+  /* display: inline-block; */
+  position: relative;
+  top:0%;
+  left: 50%;
+  transform: translate(-50%);  
+}
+
+#leftarm {
+  border-left: 12px solid white;
+  height: 60px;
+  width: 6px;
+  /* display: inline-block; */
+  position: relative;
+  top: -38%;
+  left: 35%;
+  transform: rotate(30deg);
+}
+
+#rightarm {
+  border-left: 12px solid white;
+  height: 60px; 
+  width: 6px;
+  /* display: inline-block; */
+  position: relative;
+  top: -56.25%;
+  left: 61.15%;
+  transform: rotate(-30deg);
+}
+
+#leftleg {
+  border-left: 12px solid white;
+  height: 100px;
+  width: 6px;
+  position: relative;
+  top: -36%;
+  left: 39%;
+  transform: rotate(10deg);
+}
+
+#rightleg {
+  border-left: 12px solid white;
+  height: 100px;
+  width: 6px;
+  position: relative;
+  top: -66%;
+  left: 57.5%;
+  transform: rotate(-10deg);
+} 
+
+.alpha{
+  border:5px solid orange;
+  display: flex;
+}
+
+.letterlist{
+  width:40px;
+  height: 50px;
+  font-size:40px;
+  text-align: center;
+}

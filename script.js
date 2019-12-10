@@ -1,5 +1,5 @@
 // set the defualt word with letter spaces
-const word = 'apple'
+const word = 'Grothusen'
 let wordLgth = word.length
 console.log(wordLgth)
 for(let i = 0; i < wordLgth; i++){
@@ -7,16 +7,15 @@ for(let i = 0; i < wordLgth; i++){
     let elm = document.querySelector('.wordspaces')
     let newElem = document.createElement("input")
 
-    
-    let x = document.querySelector('.wordspaces input')
     let newSpace = document.createAttribute("letterspace")
     newSpace.value = i
     elm.appendChild(newElem).setAttributeNode(newSpace)
+    document.querySelector(`[letterspace="${i}"]`).classList.add("letterbox")
       
 }
 
 // caputure the letter the user inputed
-const button = document.querySelector('.button')
+const button = document.querySelector('#inputbutton')
 button.addEventListener('click',captureLetter)
 
 function captureLetter(e){
@@ -27,7 +26,7 @@ function captureLetter(e){
   console.log('word length',wordLgth)
   let count = 0
   for(let i = 0; i < wordLgth; i++){
-    if(word.charAt(i) === inpLetter){
+    if(word.charAt(i) == inpLetter){
         console.log(`this letter ${i} equals the input letter`)
         document.querySelector(`[letterspace="${i}"]`).value = inpLetter
         //document.querySelector(`[data-letter=${e.key}]`)
