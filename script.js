@@ -18,10 +18,11 @@ for(let i = 0; i < wordLgth; i++){
 const button = document.querySelector('#inputbutton')
 button.addEventListener('click',captureLetter)
 
+let inpLetter = ""
 function captureLetter(e){
  // console.log('this is the letter',inpLetter.value)
   console.log(e)
-  let inpLetter = document.querySelector("#letter").value
+  inpLetter = document.querySelector("#letter").value
   console.log('input letter',inpLetter)
   console.log('word length',wordLgth)
   let count = 0
@@ -39,6 +40,12 @@ function captureLetter(e){
   }else{
     alert('the letter was not in the word, try again')
   }
+
+  console.log(inpLetter)
+  let z = document.querySelector(`#${inpLetter}`)
+  z.style.textDecoration = "line-through"
+
+  console.log(z.innerHTML)
   }
 
 
