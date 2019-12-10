@@ -45,13 +45,15 @@ function captureLetter(e){
   }else{
     let color = document.querySelector(`[count="${wrongCount}"]`)
     color.style.backgroundColor = "black"
-    alert('the letter was not in the word, try again')
     console.log('this is the wrongCount',wrongCount)
     wrongCount += 1
     console.log('this is the wrongCount2',wrongCount)
     if(wrongCount > 6){
         alert('you loose')
-    }
+      }
+      else{
+      alert('the letter was not in the word, try again')
+      }
   }
 
   console.log(inpLetter)
