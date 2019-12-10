@@ -19,33 +19,45 @@ const button = document.querySelector('#inputbutton')
 button.addEventListener('click',captureLetter)
 
 let inpLetter = ""
+let clickCount = 0
+let correctCount = 0
+let wrongCount = 1
 function captureLetter(e){
+  let correctCount = 0
  // console.log('this is the letter',inpLetter.value)
   console.log(e)
   inpLetter = document.querySelector("#letter").value
   console.log('input letter',inpLetter)
   console.log('word length',wordLgth)
-  let count = 0
+  
   for(let i = 0; i < wordLgth; i++){
     if(word.charAt(i) == inpLetter){
         console.log(`this letter ${i} equals the input letter`)
         document.querySelector(`[letterspace="${i}"]`).value = inpLetter
-        //document.querySelector(`[data-letter=${e.key}]`)
-        count = count + 1
+            //document.querySelector(`[data-letter=${e.key}]`)
+        correctCount += 1
+            
     }
   }
-  console.log(count)
-  if(count > 0 ){
+  console.log(correctCount)
+  if(correctCount === 1 ){
     alert('you found a match')
   }else{
+    let color = document.querySelector(`[count="${wrongCount}"]`)
+    color.style.backgroundColor = "black"
     alert('the letter was not in the word, try again')
+    console.log('this is the wrongCount',wrongCount)
+    wrongCount += 1
+    console.log('this is the wrongCount2',wrongCount)
+    if(wrongCount > 6){
+        alert('you loose')
+    }
   }
 
   console.log(inpLetter)
   let z = document.querySelector(`#${inpLetter}`)
   z.style.textDecoration = "line-through"
-
-  console.log(z.innerHTML)
+  clickCount += 1
   }
 
 
