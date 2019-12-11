@@ -4,10 +4,12 @@
   border:5px solid black;
   margin: auto;
   max-width: 375;
+  font-family: 'Indie Flower';font-size: 20px;
 } 
 
 .inputarea{
-  text-align: center;
+  /* text-align: center; */
+  float: right;
   margin:auto;
   padding:20px;
   width:200px;
@@ -34,9 +36,10 @@
 
 .wordspaces{
   text-align: center;
-  margin:20px;
+  margin: 0% auto 8%;
   border:2px solid green;
-  
+  color: whitesmoke;
+    
  }
 .letterbox{
   display:inline-block;
@@ -48,7 +51,7 @@
 
 .figure{
   align-self: center;
-  margin: auto;
+  margin: 2% auto;
   border:5px solid blue;
   height:500px;
   width: 600px
@@ -56,7 +59,7 @@
 }
 
 #top{
-  border-bottom: 12px solid black;
+  border-bottom: 12px solid whitesmoke;
   height: 60px;
   width: 300px;
   /* display: inline-block; */
@@ -65,7 +68,7 @@
   left: 10%;
 }
 #noose{
-  border-right: 12px solid black;
+  border-right: 12px solid whitesmoke;
   height: 50px;
   width: 12px;
   /* display: inline-block; */
@@ -79,17 +82,18 @@
   height: 50px;
   width: 50px;
   /* background-color:black; */
-  border: 10px solid  white;
+  border: 10px solid whitesmoke;
   border-radius: 50%; 
   /* display: inline-block; */
   position: relative;
   top: -10%;
   left: 50%;
   transform: translate(-50%);
+  opacity:0;
 }
 
 #body {
-  border: 15px solid white;
+  border: 15px solid whitesmoke;
   width: 15px;
   height: 100px;
   /* display: inline-block; */
@@ -97,10 +101,11 @@
   top: -10%;
   left: 50%;
   transform: translate(-50%);  
+  opacity:0;
 }
 
 #leftarm {
-  border-left: 12px solid white;
+  border-left: 12px solid whitesmoke;
   height: 60px;
   width: 12px;
   /* display: inline-block; */
@@ -108,10 +113,11 @@
   top: -35%;
   left: 43%;
   transform: rotate(30deg);
+  opacity:0;
 }
 
 #rightarm {
-  border-left: 12px solid white;
+  border-left: 12px solid whitesmoke;
   height: 60px; 
   width: 6px;
   /* display: inline-block; */
@@ -119,40 +125,44 @@
   top: -48%;
   left: 55%;
   transform: rotate(-30deg);
+  opacity:0;
 }
 
 #leftleg {
-  border-left: 12px solid white;
+  border-left: 12px solid whitesmoke;
   height: 100px;
   width: 6px;
   position: relative;
   top: -36%;
   left: 45%;
   transform: rotate(10deg);
+  opacity:0;
 }
 
 #rightleg {
-  border-left: 12px solid white;
+  border-left: 12px solid whitesmoke;
   height: 100px;
   width: 6px;
   position: relative;
   top: -56%;
   left: 53%;
   transform: rotate(-10deg);
+  opacity:0;
 } 
 
 #base{
-  border-bottom: 12px solid black;
+  border-bottom: 12px solid whitesmoke;
   height: 60px;
   width: 400px;
   /* display: inline-block; */
   position: relative;
   top: -137%;
   left: 10%;
+  
 }
 
 #virtical{
-  border-right: 12px solid black;
+  border-right: 12px solid whitesmoke;
   height: 400px;
   width: 12px;
   /* display: inline-block; */
@@ -164,9 +174,9 @@
 
 
 .alpha{
-  margin-top: 5%;
+  margin:5% 20% 1% 20%;
   text-align: center;
-  border:5px solid orange;
+  border:1px;
   color: whitesmoke
   }
 

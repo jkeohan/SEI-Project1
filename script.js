@@ -5,13 +5,16 @@ console.log(wordLgth)
 for(let i = 0; i < wordLgth; i++){
   console.log(i)
     let elm = document.querySelector('.wordspaces')
-    let newElem = document.createElement("input")
+    let newElem = document.createElement("div")
 
     let newSpace = document.createAttribute("letterspace")
     newSpace.value = i
     elm.appendChild(newElem).setAttributeNode(newSpace)
     document.querySelector(`[letterspace="${i}"]`).classList.add("letterbox")
-      
+    // document.querySelector(`[letterspace="${i}"]`).innerHTML = "  "
+    document.querySelector(`[letterspace="${i}"]`).style.borderBottom = "solid whitesmoke"
+    document.querySelector(`[letterspace="${i}"]`).style.marginRight = "4px"
+    
 }
 
 // caputure the letter the user inputed and provide the 
@@ -38,7 +41,7 @@ function captureLetter(e){
   for(let i = 0; i < wordLgth; i++){
     if(word.charAt(i) === inpLetter){
         console.log(`this letter ${i} equals the input letter`)
-        document.querySelector(`[letterspace="${i}"]`).value = inpLetter
+        document.querySelector(`[letterspace="${i}"]`).innerHTML = inpLetter
             //document.querySelector(`[data-letter=${e.key}]`)
         correctCount += 1
             
@@ -49,7 +52,7 @@ function captureLetter(e){
       // alert('you found a match')
     }else{
       let color = document.querySelector(`[count="${wrongCount}"]`)
-      color.style.borderColor = "black"
+      color.style.opacity = 1;
       console.log('this is the wrongCount',wrongCount)
       wrongCount += 1
       console.log('this is the wrongCount2',wrongCount)
