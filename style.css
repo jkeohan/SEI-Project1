@@ -1,3 +1,5 @@
+
+
 .container{
   border:5px solid black;
   margin: auto;
@@ -34,6 +36,7 @@
   text-align: center;
   margin:20px;
   border:2px solid green;
+  
  }
 .letterbox{
   display:inline-block;
@@ -47,32 +50,51 @@
   align-self: center;
   margin: auto;
   border:5px solid blue;
-  height:330px;
-  width: 300px
+  height:500px;
+  width: 600px
 
 }
 
+#top{
+  border-bottom: 12px solid black;
+  height: 60px;
+  width: 300px;
+  /* display: inline-block; */
+  position: relative;
+  top: -10%;
+  left: 10%;
+}
+#noose{
+  border-right: 12px solid black;
+  height: 50px;
+  width: 12px;
+  /* display: inline-block; */
+  position: relative;
+  top: -10%;
+  left: 47.25%;
+  
+}
 #head {
-  justify-items: center;
+  /* justify-items: center; */
   height: 50px;
   width: 50px;
-  background-color:white;
-  border-radius: 50%;   
-  display: inline-block;
+  /* background-color:black; */
+  border: 10px solid  white;
+  border-radius: 50%; 
+  /* display: inline-block; */
   position: relative;
-  top: 0%;
-  left:50%;
+  top: -10%;
+  left: 50%;
   transform: translate(-50%);
 }
 
 #body {
-  justify-items: center;
   border: 15px solid white;
-  width:15px;
+  width: 15px;
   height: 100px;
   /* display: inline-block; */
   position: relative;
-  top:0%;
+  top: -10%;
   left: 50%;
   transform: translate(-50%);  
 }
@@ -80,11 +102,11 @@
 #leftarm {
   border-left: 12px solid white;
   height: 60px;
-  width: 6px;
+  width: 12px;
   /* display: inline-block; */
   position: relative;
-  top: -38%;
-  left: 35%;
+  top: -35%;
+  left: 43%;
   transform: rotate(30deg);
 }
 
@@ -94,8 +116,8 @@
   width: 6px;
   /* display: inline-block; */
   position: relative;
-  top: -56.25%;
-  left: 61.15%;
+  top: -48%;
+  left: 55%;
   transform: rotate(-30deg);
 }
 
@@ -105,7 +127,7 @@
   width: 6px;
   position: relative;
   top: -36%;
-  left: 39%;
+  left: 45%;
   transform: rotate(10deg);
 }
 
@@ -114,14 +136,38 @@
   height: 100px;
   width: 6px;
   position: relative;
-  top: -66%;
-  left: 57.5%;
+  top: -56%;
+  left: 53%;
   transform: rotate(-10deg);
 } 
 
+#base{
+  border-bottom: 12px solid black;
+  height: 60px;
+  width: 400px;
+  /* display: inline-block; */
+  position: relative;
+  top: -137%;
+  left: 10%;
+}
+
+#virtical{
+  border-right: 12px solid black;
+  height: 400px;
+  width: 12px;
+  /* display: inline-block; */
+  position: relative;
+  top: -125%;
+  left: 10%;
+}
+
+
+
 .alpha{
+  margin-top: 5%;
   text-align: center;
   border:5px solid orange;
+  color: whitesmoke
   }
 
 .letterlist{

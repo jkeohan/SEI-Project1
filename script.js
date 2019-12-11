@@ -30,6 +30,7 @@ function captureLetter(e){
   let correctCount = 0
  // console.log('this is the letter',inpLetter.value)
   console.log(e)
+  e.preventDefault()
   inpLetter = document.querySelector("#letter").value
   console.log('input letter',inpLetter)
   console.log('word length',wordLgth)
@@ -45,25 +46,24 @@ function captureLetter(e){
   }
     console.log(correctCount)
     if(correctCount > 0 ){
-      alert('you found a match')
+      // alert('you found a match')
     }else{
       let color = document.querySelector(`[count="${wrongCount}"]`)
-      color.style.backgroundColor = "black"
+      color.style.borderColor = "black"
       console.log('this is the wrongCount',wrongCount)
       wrongCount += 1
       console.log('this is the wrongCount2',wrongCount)
-      // if(wrongCount > 6){
-      //     alert('you loose')
-      //   }
-      //   else{
-      //   alert('the letter was not in the word, try again')
-      //   }
+       if(wrongCount > 6){
+           alert('you loose')
+         }
+      
     }
 
   console.log(inpLetter)
   let z = document.querySelector(`#${inpLetter}`)
   z.style.textDecoration = "line-through"
   clickCount += 1
+  document.querySelector('#input').reset()
   }
 
 
