@@ -1,5 +1,5 @@
 // set the defualt word with letter spaces
-const word = 'Grothusen'
+const word = 'apple'
 let wordLgth = word.length
 console.log(wordLgth)
 for(let i = 0; i < wordLgth; i++){
@@ -14,14 +14,18 @@ for(let i = 0; i < wordLgth; i++){
       
 }
 
-// caputure the letter the user inputed
+// caputure the letter the user inputed and provide the 
+// the correct response on the screen
 const button = document.querySelector('#inputbutton')
 button.addEventListener('click',captureLetter)
+
 
 let inpLetter = ""
 let clickCount = 0
 let correctCount = 0
 let wrongCount = 1
+
+
 function captureLetter(e){
   let correctCount = 0
  // console.log('this is the letter',inpLetter.value)
@@ -31,7 +35,7 @@ function captureLetter(e){
   console.log('word length',wordLgth)
   
   for(let i = 0; i < wordLgth; i++){
-    if(word.charAt(i) == inpLetter){
+    if(word.charAt(i) === inpLetter){
         console.log(`this letter ${i} equals the input letter`)
         document.querySelector(`[letterspace="${i}"]`).value = inpLetter
             //document.querySelector(`[data-letter=${e.key}]`)
@@ -39,22 +43,22 @@ function captureLetter(e){
             
     }
   }
-  console.log(correctCount)
-  if(correctCount === 1 ){
-    alert('you found a match')
-  }else{
-    let color = document.querySelector(`[count="${wrongCount}"]`)
-    color.style.backgroundColor = "black"
-    console.log('this is the wrongCount',wrongCount)
-    wrongCount += 1
-    console.log('this is the wrongCount2',wrongCount)
-    if(wrongCount > 6){
-        alert('you loose')
-      }
-      else{
-      alert('the letter was not in the word, try again')
-      }
-  }
+    console.log(correctCount)
+    if(correctCount > 0 ){
+      alert('you found a match')
+    }else{
+      let color = document.querySelector(`[count="${wrongCount}"]`)
+      color.style.backgroundColor = "black"
+      console.log('this is the wrongCount',wrongCount)
+      wrongCount += 1
+      console.log('this is the wrongCount2',wrongCount)
+      // if(wrongCount > 6){
+      //     alert('you loose')
+      //   }
+      //   else{
+      //   alert('the letter was not in the word, try again')
+      //   }
+    }
 
   console.log(inpLetter)
   let z = document.querySelector(`#${inpLetter}`)
