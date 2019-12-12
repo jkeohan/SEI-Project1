@@ -88,7 +88,7 @@ function mainGame(){
         console.log('this is the wrongCount',wrongCount)
         
         console.log('this is the wrongCount2',wrongCount)
-        if(wrongCount > 6){
+        if(wrongCount === 6){
             document.querySelector(".message").innerHTML="You loose!"
           } 
     }
@@ -113,13 +113,12 @@ function mainGame(){
   }
 
 
-// const reloadButton = document.querySelector('.reset')
-// button.addEventListener('click',reload)
-
-//  function reload(){
-//     reload()
+  const reset=document.querySelector('.reset')
+  reset.addEventListener('click', onReset)
+  function onReset(){
+    location.reload( )
   
-//  }
+  }
 
 
 
