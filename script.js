@@ -1,6 +1,47 @@
+const url = "https://random-word-api.herokuapp.com/word?key=1DN2YCF2&number=1"
+let wordLgth = 0
+let word = " "
+let inpLetter = ""
+let clickCount = 0
+let correctCount = 0
+let wrongCount = 0
+let wrongLetter = 0
+let letterArr = []
+
+  console.log('before')
+  fetch(url)
+    .then(res => res.json())
+    // .then(wordData => console.log(wordData))
+    .then(wordData => setUpGame(wordData))
+    .catch(err => console.log('this is err',err))
+  // console.log(wordData)
+  console.log('after')
+  // let arr = wordData
+  // console.log(arr[0])
+  // console.log([0])
+// function selectAllPok(data){
+//   console.log(data)
+//   // for(let i = 0; 0 < data.length; i++){
+//     // let apiWord = data
+//     // let results=document.querySelector('#results')
+//     // let button = document.createElement('button')
+//     // button.appendChild(document.createTextNode(name))
+//     // results.appendChild(button)
+//     console.log(apiWord)
+//     setUpGame(data)
+//   }
+
+
+
+
+
 // set the defualt word with letter spaces
-const word = 'apple'
-let wordLgth = word.length
+function setUpGame(apiWord){
+console.log(apiWord)
+word = apiWord[0]  
+console.log(word) 
+wordLgth = word.length
+correctCount = wordLgth
 console.log(wordLgth)
 for(let i = 0; i < wordLgth; i++){
   console.log(i)
@@ -16,19 +57,15 @@ for(let i = 0; i < wordLgth; i++){
     document.querySelector(`[letterspace="${i}"]`).style.marginRight = "8px"
     
 }
-
+}
 // caputure the letter the user inputed and provide the 
 // the correct response on the screen
 const button = document.querySelector('#inputbutton')
 button.addEventListener('click',captureLetter)
 
-
-let inpLetter = ""
-let clickCount = 0
-let correctCount = wordLgth
-let wrongCount = 0
-let wrongLetter = 0
-let letterArr = []
+// correctCount = wordLgth
+// console.log('word lenght',wordLgth)
+// console.log('correct count',correctCount)
 
 function captureLetter(e){
   let wrongLetter = 0
@@ -64,6 +101,7 @@ function checkLetter(input){
 function mainGame(){
   console.log('input letter',inpLetter)
   console.log('word length',wordLgth)
+  console.log('this is the word',word)
   
   if(word.includes(inpLetter)){
           for(let i = 0; i < wordLgth; i++){
@@ -119,12 +157,3 @@ function mainGame(){
     location.reload( )
   
   }
-
-
-
- 
-
-
-
-  
-
