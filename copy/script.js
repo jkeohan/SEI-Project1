@@ -13,7 +13,7 @@ for(let i = 0; i < wordLgth; i++){
     document.querySelector(`[letterspace="${i}"]`).classList.add("letterbox")
     // document.querySelector(`[letterspace="${i}"]`).innerHTML = "  "
     document.querySelector(`[letterspace="${i}"]`).style.borderBottom = "solid whitesmoke"
-    document.querySelector(`[letterspace="${i}"]`).style.marginRight = "8px"
+    document.querySelector(`[letterspace="${i}"]`).style.marginRight = "4px"
     
 }
 
@@ -25,12 +25,12 @@ button.addEventListener('click',captureLetter)
 
 let inpLetter = ""
 let clickCount = 0
-let correctCount = wordLgth
+let correctCount = 0
 let wrongCount = 1
 
 
 function captureLetter(e){
-  // let correctCount = 0
+  let correctCount = 0
  // console.log('this is the letter',inpLetter.value)
   console.log(e)
   e.preventDefault()
@@ -43,25 +43,21 @@ function captureLetter(e){
         console.log(`this letter ${i} equals the input letter`)
         document.querySelector(`[letterspace="${i}"]`).innerHTML = inpLetter
             //document.querySelector(`[data-letter=${e.key}]`)
-        correctCount -= 1
+        correctCount += 1
             
     }
   }
     console.log(correctCount)
     if(correctCount > 0 ){
-      // document.querySelector(".message").innerHTML="Yeah!!  Winner!!"
-    }if(correctCount == 0 ){
-        document.querySelector(".message").innerHTML="Yeah!!  Winner!!"
-    }else {
+      // alert('you found a match')
+    }else{
       let color = document.querySelector(`[count="${wrongCount}"]`)
       color.style.opacity = 1;
       console.log('this is the wrongCount',wrongCount)
       wrongCount += 1
       console.log('this is the wrongCount2',wrongCount)
        if(wrongCount > 6){
-           document.querySelector(".message").innerHTML="You loose!"
-         }else{
-          
+           alert('you loose')
          }
       
     }
@@ -72,7 +68,7 @@ function captureLetter(e){
   clickCount += 1
   document.querySelector('#input').reset()
 
-
+  
   }
 
 

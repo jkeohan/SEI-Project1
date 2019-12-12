@@ -7,43 +7,18 @@
   font-family: 'Indie Flower';font-size: 20px;
 } 
 
-.mainarea{
-  border: 2px;
-  width: 100%;
-  height: 100%;
-}
-.figure{
-  display: inline-block;
-  /* align-self: center; */
-  margin: 2% 0 0 10%;
-  border:5px;
-  height:500px;
-  width: 600px
+.flex-container{
+  display: flex
 }
 
-.messagebox{
-  vertical-align: top;
-  display:inline-block;
-  text-align: center;
-  border: 2px;
-  color:whitesmoke;
-  margin:5% 0 0 2%;
-  width:250px;
-  height: 200px;
-  
-}
 .inputarea{
-  margin:0 0  0; 
+  /* text-align: center; */
+  margin:25% 0 0 0;
+  /* padding:20px; */
   width:250px;
   height: 60;
-  border:2px;
-}
-
-.message{
-  width: 100%;
-  font-size: 40px;
-  border:2px;
-
+  border:2px solid red;
+  
 }
 
 #letter{
@@ -55,12 +30,9 @@
 }
 
 #inputbutton{
-  background-color: transparent;
-  color: whitesmoke;
   display: inline-block;
   width:150px;
   height: 50px;
-  font-family: 'Indie Flower';font-size: 30px;
   font-size:40px;
   
 }
@@ -68,7 +40,7 @@
 .wordspaces{
   text-align: center;
   margin: 0% auto 8%;
-  border:2px;
+  border:2px solid green;
   color: whitesmoke;
     
  }
@@ -80,7 +52,14 @@
   
 }
 
+.figure{
+  align-self: center;
+  margin: auto;
+  border:5px solid blue;
+  height:500px;
+  width: 600px
 
+}
 
 #top{
   border-bottom: 12px solid whitesmoke;
