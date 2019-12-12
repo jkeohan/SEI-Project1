@@ -5,6 +5,10 @@
   margin: auto;
   max-width: 375;
   font-family: 'Indie Flower';font-size: 20px;
+  background-image: url(https://cdn.pixabay.com/photo/2014/11/05/12/08/chalkboard-517818_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
 } 
 
 .mainarea{
