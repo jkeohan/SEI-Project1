@@ -44,7 +44,7 @@
   
 }
 .inputarea{
-  margin:0 0 0 0; 
+  margin:0 auto 0 ; 
   width:250px;
   height: 60;
   border:2px;
@@ -209,7 +209,7 @@
 
 
 .alpha{
-  margin:5% 20% 1% 20%;
+  margin:2% 20% 1% 20%;
   text-align: center;
   border:1px;
   color: whitesmoke;
