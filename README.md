@@ -6,11 +6,6 @@
 
 I will be making a basic hangman game.  The user will be presented with the letters of the alphabet and a number of spaces equal the number of letters in a word.  The user will need to guess what the word is by entering one letter at a time.  One each guess the corrisponding letter will be crossed off the list.  With each correct letter the it will appear in the corresponding space of the word.  With each incorrect letter a section of the body will appear staring with the head, then the body, left arm, right arm, left leg, and right leg.  The user will also be able to see which letter they have already tried.  If the user is able to guess all of he letters in the word before the full body appears they win the game and will be presented with a winning message.  If he or she is unable to identify all of the letters in the word before the full body appears the user will be presented with a message to try again.
 
-
-## Priority Matrix
-
-http://res.cloudinary.com/damark726/image/upload/v1513020174/tpm_th4sqg.jpg
-
 ## MVP 
   - Load the game with one word hardcoded
   - Present the user with the word spaces
@@ -28,10 +23,6 @@ http://res.cloudinary.com/damark726/image/upload/v1513020174/tpm_th4sqg.jpg
   - Create a score, based on time and the number of guess
   - Create a hint that will show one letter at a time of the work
   - Create different levels each, medium and hard
-
- 
-## Wireframes
-
 
 ## Game Components
 
@@ -55,20 +46,20 @@ There is a "play again" button that will rese the page, select a new workd from 
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Defining variables & setting click events | A | 6hrs| 8hrs | 8hrs |
-| Setting all functions (win/lose events) | A | 10hrs| 13hrs | 13hrs |
-| Rafactoring my javascript to use classes | A | 6hrs| 8hrs | 8hrs |
-| Setting up the form | B | 2hrs| 1hrs | 1hrs |
-| HTML & CSS | C | 4hrs| 6hrs | 6hrs |
-| Total Time | / | 28hrs| 36hrs | 36hrs |
+| Create HTML | A | 2hrs| 4hrs |
+| Functions: |  | |  | 
+| Creating the HTML | A | 2hrs | 4hrs |
+| Setup the game | A | 2hrs| 4hrs |
+| Capture the letter | A | 1hrs| 2hrs |
+| Reset the game | A | 1hrs | 2hrs |
+| Main Game | A | 8hrs | 12hrs|
+| Cross the letter off | B | 1hrs | 1 hrs|
+| Creating the CSS | B | 4hrs | 8hrs |
+| check if the letter is used  | c | 1hrs| 2hrs | 
+| Total Time | / | 22hrs| 39hrs | 
 
 ## Additional Libraries
 I did use a google font so I have a link to it in the html.
-
-## Code Snippet
-http://res.cloudinary.com/damark726/image/upload/v1513059967/Screen_Shot_2017-12-12_at_1.24.59_AM_myzzfa.png
-
-In this picture, I have essentially the heart of my javascript. It is one "if" statement with eleven "else if" statements. In this snippet of code, I am checking the letter that was clicked and running it through all the possible conditions it could have. I has to fall in one of those 12 statements, and depending on which one it falls in, something will happen. For example, if it is a correct guess, then the mathcing letter will become visible on the winning word, or if it is an incorrect guess, then depending on how many incorrect guesses has happened, it determines which body part should be displayed next.
 
 ## Change Log
 As part of the post MVP I had wanted to incorporate some hints and levels to the game.  In the end I decided not to and may incorporate them at a later date.  
