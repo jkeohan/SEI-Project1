@@ -18,6 +18,10 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |Day 7: Tue| Project Presentations |
 
 ## Project Description
+
+I will be making a basic hangman game.  The user will be presented with the letters of the alphabet and a number of spaces equal the number of letters in a word.  The user will need to guess what the word is by entering one letter at a time.  One each guess the corrisponding letter will be crossed off the list.  With each correct letter the it will appear in the corresponding space of the word.  With each incorrect letter a section of the body will appear staring with the head, then the body, left arm, right arm, left leg, and right leg.  The user will also be able to see which letter they have already tried.  If the user is able to guess all of he letters in the word before the full body appears they win the game and will be presented with a winning message.  If he or she is unable to identify all of the letters in the word before the full body appears the user will be presented with a message to try again.
+
+
 My final project is a very basic hangman game. It has only one winning word hard-coded in. The user has 6 chances to guess the correct word, or else they lose. The crux of the javascript is basically one big "if" statement with several "else if" statements. Each "if" or "else if" statement essentially checks what the value of the div that is clicked. There are 26 divs, one for each letter of the alphabet, and depending on what letter it is, a certain action will take place. If it is one of the correct letters, then that letter(s) will appear in the winning word. If it is an incorrect guess, the "if/else if" statements check a counter to see how many wrong guesses have happened already and adds a body part accordingly. The head adds on first, then the body, then the right-arm, then the left-arm, then the right-leg, and finally the left-leg. As each body part is added, the counter goes down one. Once that counter reaches 0, the game is over.
 
 [CodePen](https://codepen.io/jkeohan/pen/GyKXoO)
@@ -27,17 +31,23 @@ My final project is a very basic hangman game. It has only one winning word hard
 http://res.cloudinary.com/damark726/image/upload/v1513020174/tpm_th4sqg.jpg
 
 ## MVP 
- - Have one word working for a hangman game.
- - Have all the event listeners working for each letter.
- - Have body part appear each wrong guess.
- - Have win logic completed when the guesses match the winning word.
- - Have lose event happen when chances run out.
-
+  - Load the game with one word hardcoded
+  - Present the user with the word spaces
+  - Provide the user with an input filed 
+  - Present the with the "hangman gallows"
+  - With each letter represent the letter as being guessed
+  - With each incorrect guess draw part of the body 
+  - Present the user a winning message if they guess the word correctly
+  - Present the user with a try again message if they do not guess the word
+ 
 ## POST MVP
- - Make multiple winning words and have a function to randomize which word is the winning word.
- - Animate the hanged body to swing slowly back and forth.
- - Add more details to the hanged body, such as clothes or blood.
- - Create a timer and a score count. The less turns the user uses to solve the word, the higher the score.
+  - Select the word from a random word API
+  - Add additional styling to the page
+  - Add additional styling to the hangman
+  - Create a score, based on time and the number of guess
+  - Create a hint that will show one letter at a time of the work
+  - Create different levels each, medium and hard
+
  
 ## Wireframes
  - http://res.cloudinary.com/damark726/image/upload/v1512706736/whiteboard_kaxc0m.jpg
