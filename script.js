@@ -1,4 +1,4 @@
-const url = "https://random-word-api.herokuapp.com/word?key=1DN2YCF2&number=1"
+const url = "https://random-word-api.herokuapp.com/word?key=K7E5G7GF&number=1"
 let wordLgth = 0
 let word = " "
 let inpLetter = ""
@@ -127,7 +127,7 @@ function mainGame(){
         
         console.log('this is the wrongCount2',wrongCount)
         if(wrongCount === 6){
-            document.querySelector(".message").innerHTML="You loose!"
+            document.querySelector(".message").innerHTML= (`You loose! the word is "${word}"`)
           } 
     }
     strikeLetter(inpLetter)
