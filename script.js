@@ -1,3 +1,5 @@
+// this is my hangman javascript
+
 const url = "https://random-word-api.herokuapp.com/word?key=ZIQQMIB2&number=1"
 let wordLgth = 0
 let word = " "
@@ -12,7 +14,7 @@ let letterArr = []
   fetch(url)
     .then(res => res.json())
     // .then(wordData => console.log(wordData))
-    .then(wordData => setUpGame(wordData))
+        .then(wordData => setUpGame(wordData))
     .catch(err => console.log('this is err',err))
   // console.log(wordData)
   console.log('after')
