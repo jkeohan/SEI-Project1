@@ -44,7 +44,7 @@ There is a "play again" button that will rese the page, select a new word from t
 ## Functional Components
 
 | Component | Priority | Estimated Time | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
+| --- | :---: |  :---: | :---: |
 | Create HTML | A | 2hrs| 4hrs |
 | Functions: |  | |  | 
 | Creating the HTML | A | 2hrs | 4hrs |
